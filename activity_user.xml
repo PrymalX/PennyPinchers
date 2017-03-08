@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parthpatel.logincase.User">
+
+    <TextView
+        android:id="@+id/etExpense"
+        android:layout_width="379dp"
+        android:layout_height="72dp"
+        android:text="What is your monthly Fixed expense?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Hello!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/etIncome"
+        android:layout_width="376dp"
+        android:layout_height="46dp"
+        android:text="Budget with Amount below!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="488dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="376dp"
+        android:layout_height="46dp"
+        android:text="What is your Monthly income?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <EditText
+        android:id="@+id/nExpense"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="rent, insurance, ect"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <EditText
+        android:id="@+id/nIncome"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="income"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/dollar1"
+        android:layout_width="31dp"
+        android:layout_height="46dp"
+        android:text="$"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <TextView
+        android:id="@+id/dollar"
+        android:layout_width="31dp"
+        android:layout_height="46dp"
+        android:text="$"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="378dp"
+        android:layout_height="52dp"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="418dp" />
+
+    <TextView
+        android:id="@+id/budgetAmount"
+        android:layout_width="376dp"
+        android:layout_height="49dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+</android.support.constraint.ConstraintLayout>
