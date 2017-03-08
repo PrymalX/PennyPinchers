@@ -1,3 +1,3 @@
 # PennyPinchers
-CS386_Group18
+CS386_Group18 \n
 Actual App Code
