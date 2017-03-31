@@ -55,8 +55,8 @@ public class LoginActivity extends AppCompatActivity {
                             if (success){
                                 String name = jsonResponse.getString("name");
                                 int age = jsonResponse.getInt ("age");
-
-                                Intent ii = new Intent(LoginActivity.this, UserAreaActivity.class);
+                                //Make it Link here to whereever
+                                Intent ii = new Intent(LoginActivity.this, HomePage.class);
                                 ii.putExtra("name", name);
                                 ii.putExtra("username", username);
                                 ii.putExtra("age", age);

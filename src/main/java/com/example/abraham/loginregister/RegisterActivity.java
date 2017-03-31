@@ -22,9 +22,9 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        final EditText etAge = (EditText) findViewById(R.id.etAge);
         final EditText etName = (EditText) findViewById(R.id.etName);
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
+        final EditText etAge = (EditText) findViewById(R.id.etAge);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final Button bRegister = (Button) findViewById(R.id.bRegister);
 
@@ -32,10 +32,12 @@ public class RegisterActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
                 final String name = etName.getText().toString();
                 final String username = etUsername.getText().toString();
+                final String age =etAge.getText().toString();
                 final String password = etPassword.getText().toString();
-                final int age = Integer.parseInt(etAge.getText().toString());
+
 
 
                 Response.Listener<String> responseListener = new Response.Listener<String>(){
@@ -47,7 +49,7 @@ public class RegisterActivity extends AppCompatActivity {
                             boolean success = jsonOResponse.getBoolean("success");
 
                             if (success){
-                                Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                                Intent intent = new Intent(RegisterActivity.this, UserAreaActivity.class);
                                 RegisterActivity.this.startActivity(intent);
 
                             }
